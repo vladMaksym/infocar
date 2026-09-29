@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>InfoCar — головна</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="car" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="12" rx="2"/><circle cx="8.5" cy="13.5" r="1.5"/><path d="M3 9l3-4h6l3 4"/></symbol>
+  <symbol id="plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="user" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+  <symbol id="search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></symbol>
+  <symbol id="wheel" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></symbol>
+</svg>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="topbar">
+      <a class="logo" href="#"><svg class="ico"><use href="#wheel"/></svg>InfoCar</a>
+      <div class="search"><svg class="ico"><use href="#search"/></svg><input placeholder="Пошук на сайті"></div>
+      <div class="actions">
+        <a href="#"><svg class="ico"><use href="#plus"/></svg>Додати оголошення</a>
+        <a href="#"><svg class="ico"><use href="#user"/></svg>Вхід</a>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="nav-links">
+        <a href="#">Нові автомобілі</a><a href="#">Б/у авто</a><a href="#">Відгуки</a><a href="#">Тест-драйви</a>
+        <a href="#">Новини</a><a href="#">Відео</a><a href="#" class="accent">Мото</a><a href="#">Розмитнення</a>
+      </div>
+      <a class="more" href="#">Усі розділи ▾</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <div class="tabs">
+        <button class="tab on" data-p="p-new">Нові авто</button>
+        <button class="tab" data-p="p-used">Б/у авто</button>
+      </div>
+      <div class="panel on" id="p-new">
+        <div class="chips">
+          <label class="chip"><input type="checkbox">Седан</label>
+          <label class="chip"><input type="checkbox" checked>Кросовер</label>
+          <label class="chip"><input type="checkbox">Хетчбек</label>
+          <label class="chip"><input type="checkbox">Купе</label>
+          <label class="chip"><input type="checkbox">Універсал</label>
+          <label class="chip"><input type="checkbox">Мінівен</label>
+        </div>
+        <div class="fields">
+          <label>Ціна від<input value="15 000 $"></label>
+          <label>Ціна до<input value="50 000 $"></label>
+        </div>
+        <div class="chips">
+          <label class="chip"><input type="checkbox">Механічна</label>
+          <label class="chip"><input type="checkbox">Автоматична</label>
+          <label class="chip"><input type="checkbox">Привід 4x4</label>
+        </div>
+        <div class="panel-foot"><button class="btn">Підібрати авто</button><a class="link" href="#">Майстер підбору →</a></div>
+      </div>
+      <div class="panel" id="p-used">
+        <div class="fields">
+          <label>Марка<select><option>Будь-яка</option></select></label>
+          <label>Модель<select><option>Будь-яка</option></select></label>
+          <label>Рік від<input></label><label>Рік до<input></label>
+          <label>Ціна від<input></label><label>Ціна до<input></label>
+        </div>
+        <div class="panel-foot"><button class="btn">Пошук</button><a class="link" href="#">Повний пошук →</a></div>
+        <div class="mini">
+          <div><div class="ph" style="aspect-ratio:4/3;margin-bottom:6px"><svg class="ico"><use href="#car"/></svg></div>Nissan Rogue<b>2014 · 10 900 $</b></div>
+          <div><div class="ph" style="aspect-ratio:4/3;margin-bottom:6px"><svg class="ico"><use href="#car"/></svg></div>SsangYong Rexton<b>2005 · 5 900 $</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <h3>Новинки</h3>
+      <div class="novelty"><div class="ph"><svg class="ico"><use href="#car"/></svg></div><span>Volkswagen T-Cross<b>від 24 090 $</b></span></div>
+      <div class="novelty"><div class="ph"><svg class="ico"><use href="#car"/></svg></div><span>Peugeot 408<b>від 30 660 $</b></span></div>
+    </div>
+
+    <div class="box">
+      <h3>Каталог моделей</h3>
+      <div class="brands">
+        <a href="#">Audi</a><a href="#">BMW</a><a href="#">Chevrolet</a><a href="#">Citroen</a><a href="#">Ford</a>
+        <a href="#">Honda</a><a href="#">Hyundai</a><a href="#">KIA</a><a href="#">Lexus</a><a href="#">Mazda</a>
+        <a href="#">Mercedes</a><a href="#">Mitsubishi</a><a href="#">Nissan</a><a href="#">Opel</a><a href="#">Peugeot</a>
+        <a href="#">Renault</a><a href="#">Skoda</a><a href="#">Suzuki</a><a href="#">Toyota</a><a href="#">Volkswagen</a>
+      </div>
+      <a class="link" href="#" style="display:block;margin-top:10px">Всі марки →</a>
+    </div>
+  </section>
+
+  <div class="ad">РЕКЛАМА</div>
+
+  <!-- NEWS FEATURE -->
+  <section class="section news">
+    <a class="feature" href="#">
+      <div class="thumb"><svg class="ico"><use href="#car"/></svg></div>
+      <h3>#ЩоПочому: ЕМОЦІЇ, КРЕДИТ, ОБСЛУГОВУВАННЯ. Час робити вибір</h3>
+    </a>
+    <div class="news-list">
+      <a href="#">#ЩоПочому: CUPRA Terramar. Якість Audi за ціну Skoda?<span class="meta">19.09.2026 · 0 коментарів</span></a>
+      <a href="#">#ЩоПочому: Шукаю СОБІ КРОСОВЕР. Все стало ще складніше<span class="meta">16.09.2026 · 0 коментарів</span></a>
+      <a href="#">#ЩоПочому: Audi Q8 Business. Конкурентів НЕМА?<span class="meta">11.09.2026 · 0 коментарів</span></a>
+    </div>
+  </section>
+
+  <!-- ROWS -->
+  <section class="section">
+    <div class="row">
+      <div class="label">НОВИНИ</div>
+      <div class="cards">
+        <a class="card" href="#"><div class="thumb"><svg class="ico"><use href="#car"/></svg><b class="badge">4</b></div><h4>Hyundai презентував у Південній Кореї нове покоління</h4></a>
+        <a class="card" href="#"><div class="thumb"><svg class="ico"><use href="#car"/></svg><b class="badge">0</b></div><h4>Nissan представив новий Rogue Hybrid 2027</h4></a>
+        <a class="card" href="#"><div class="thumb"><svg class="ico"><use href="#car"/></svg><b class="badge">9</b></div><h4>Mitsubishi представила нове покоління позашляховика</h4></a>
+        <a class="card" href="#"><div class="thumb"><svg class="ico"><use href="#car"/></svg><b class="badge">2</b></div><h4>Lexus представив оновлену версію кросовера NX</h4></a>
+      </div>
+      <aside class="side">
+        <div class="socials"><i>F</i><i>T</i><i>@</i><i>IG</i><i>RSS</i><i>YT</i></div>
+        <a class="link" href="#">Всі новини →</a>
+      </aside>
+    </div>
+
+    <div class="row">
+      <div class="label">КЛУБ INFOCAR</div>
+      <div class="cards">
+        <a class="card" href="#"><div class="thumb"><svg class="ico"><use href="#car"/></svg><b class="badge">+13</b></div><h4>Suzuki Grand Vitara<small>crash2032 · Київ</small></h4></a>
+        <a class="card" href="#"><div class="thumb"><svg class="ico"><use href="#car"/></svg><b class="badge">+18</b></div><h4>Volvo XC60<small>998 · Суми</small></h4></a>
+        <a class="card" href="#"><div class="thumb"><svg class="ico"><use href="#car"/></svg><b class="badge">+15</b></div><h4>Chevrolet Captiva<small>mezser · Київ</small></h4></a>
+        <a class="card" href="#"><div class="thumb"><svg class="ico"><use href="#car"/></svg><b class="badge">+58</b></div><h4>Toyota Camry<small>W222 · Керч</small></h4></a>
+      </div>
+      <aside class="side">
+        <a href="#">Вхід</a><a href="#">Реєстрація</a><a href="#">Додати свій автомобіль</a>
+        <a class="link" href="#">Всі авто →</a>
+      </aside>
+    </div>
+
+    <div class="row">
+      <div class="label">СТАТТІ</div>
+      <div class="cards">
+        <a class="card" href="#"><div class="thumb"><svg class="ico"><use href="#car"/></svg><b class="badge">0</b></div><h4>Українські дороги зразка 2021-го: попереду багато роботи</h4></a>
+        <a class="card" href="#"><div class="thumb"><svg class="ico"><use href="#car"/></svg><b class="badge">2</b></div><h4>Нові ПДР 2021: свідчення неспішного прогресу</h4></a>
+        <a class="card" href="#"><div class="thumb"><svg class="ico"><use href="#car"/></svg><b class="badge">0</b></div><h4>Спортивна історія Maserati: все або нічого</h4></a>
+        <a class="card" href="#"><div class="thumb"><svg class="ico"><use href="#car"/></svg><b class="badge">0</b></div><h4>Камери, швидкість, штрафи й ПДД. Як буде працювати новая</h4></a>
+      </div>
+      <aside class="side">
+        <h5>Теми статей</h5>
+        <a href="#">Нові авто</a><a href="#">Б/у авто</a><a href="#">Історія</a><a href="#">Технології</a>
+        <a class="link" href="#">Всі статті →</a>
+      </aside>
+    </div>
+  </section>
+
+  <div class="ad-strip">МІСЦЕ ПІД РЕКЛАМУ</div>
+
+  <!-- FOOTER -->
+  <footer>
+    <details class="about">
+      <summary>Читати більше</summary>
+      <p>InfoCar.ua — найбільший автомобільний портал України. Сайт було запущено в 2005 році як дошка оголошень, і з тих пір він переріс у найбільший і повний каталог нових автомобілів в Україні та СНД. У нашому каталозі більше 3000 моделей авто, які допоможуть з підбором нового автомобіля. Тим, хто ще не визначився з вибором, допоможуть тест-драйви і база відгуків власників авто.</p>
+    </details>
+    <div class="cols">
+      <div><h5>Про сайт</h5><a href="#">Розміщення реклами</a><a href="#">Контакти</a><a href="#">Автори</a><a href="#">Правила сайту</a><a href="#">Конфіденційність</a></div>
+      <div><h5>Популярні марки</h5><a href="#">Hyundai</a><a href="#">Nissan</a><a href="#">Renault</a><a href="#">Toyota</a><a href="#">Ford</a></div>
+      <div><h5>Новинки в каталозі</h5><a href="#">KIA Stonic</a><a href="#">Volkswagen ID.3 Neo</a><a href="#">KIA Seltos</a></div>
+    </div>
+    <div class="bottom"><span>2005–2026 © «InfoCar.ua»™</span><div class="socials"><i>F</i><i>IG</i><i>RSS</i><i>T</i><i>YT</i></div></div>
+  </footer>
+
+</div>
+
+<script>
+document.querySelectorAll('.tab').forEach(t => t.onclick = () => {
+  document.querySelectorAll('.tab,.panel').forEach(e => e.classList.remove('on'));
+  t.classList.add('on');
+  document.getElementById(t.dataset.p).classList.add('on');
+});
+</script>
+</body>
+</html>
